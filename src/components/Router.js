@@ -22,7 +22,7 @@ export default function Router({ isLoggedIn, userObj, refreshUser }) {
             }}
           >
             <Route exact path="/">
-              <Home userObj={userObj} />
+              {userObj ? <Home userObj={userObj} /> : <>Loading...</>}
             </Route>
             <Route path="/profile">
               <Profile refreshUser={refreshUser} userObj={userObj} />

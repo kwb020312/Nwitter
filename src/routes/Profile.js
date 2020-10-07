@@ -38,6 +38,7 @@ export default function Profile({ userObj, refreshUser }) {
   const onChange = (e) => {
     setNewDisplayName(e.target.value);
   };
+
   return (
     <div className="container">
       <form onSubmit={onSubmit} className="profileForm">
